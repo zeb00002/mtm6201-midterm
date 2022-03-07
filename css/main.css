@@ -1,0 +1,268 @@
+/*css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --clr-text:#1D1A0C;
+    --clr-headings:#D8A941;
+    --clr-sec:#FDE7C8;
+    --clr-hover:#FFFFFF;
+    --clr-bg:#654813;
+
+    --text-font:arial;
+    --text-headings: 'Oswald', sans-serif; 
+}
+
+
+html{
+    font-family: var(--text-font);
+    color:var(--clr-text);
+}
+
+body{
+    margin:0;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+button{
+    border-radius: 25px;
+}
+
+/*Typography*/
+h1,h2,p{
+    margin:0;
+}
+
+p{
+    margin-bottom: 0.85em;;
+}
+
+
+
+h1,h2{
+    font-family: var(--text-headings);
+    line-height:0.8;
+    
+}
+
+h2{
+    font-size: 4rem;
+}
+
+
+
+/*Navigation*/
+
+
+nav ul{
+    display:flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+    justify-content:space-around;
+    background-color:var(--clr-bg) ;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.5em;
+    color:var(--clr-sec);
+    text-decoration: none;
+    
+}
+
+nav a:hover,
+nav a:focus{
+    color: var(--clr-hover);
+}
+
+/*Hompage styles */
+.link {
+
+    padding:1em 1em;
+}
+.link a{
+    color:var(--clr-headings);
+}
+
+.mission img {
+    width: 280px;
+    height:230px;
+    padding:1em 2.5em;
+}
+
+.mission h1{
+    color:#D8A941;
+    font-size: 30px;
+    font-family: var(--text-headings);
+    padding-left:1.25em;
+}
+
+.mission p{
+    font-family: var(--text-font);
+    font-size: 16px;
+    padding:1em 2.5em;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 3em;
+    
+}
+
+.container button {
+    background-color:var(--clr-bg);
+    color:var(--clr-sec);
+    width:150px;
+    height: 45px;
+    font-size:25px;
+    margin:2em 4em;
+    margin-bottom:0.5em;
+
+    
+}
+
+.shop img{
+    width:280px;
+    height:230px;
+    padding:1em 2.5em;
+
+}
+.events img{
+    width:280px;
+    height:230px;
+    padding:1em 2.5em;
+    
+}
+
+.faqs img{
+    width:280px;
+    height:230px;
+    padding:1em 2.5em;
+    
+}
+
+.footer-address{
+    display:none;
+    
+}
+
+
+
+.grid-2{
+    display:grid;
+    grid-template-columns: 80% 20%;
+    
+
+   
+    background-color: var(--clr-bg);
+   
+}
+
+.footer-address{
+    display:none;
+}
+
+.top-to button{
+    border-color:1px solid var(--clr-sec);
+    background-color:var(--clr-bg);
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 0px;
+    margin-top:1em;
+    margin-right:1em;
+    
+}
+
+.top-to a{
+    color:var(--clr-sec);
+    
+}
+.top-to a:hover{
+    color:var(--clr-hover);
+    
+}
+
+
+
+.footer-nav ul{
+    display:flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+    justify-content:flex-start;
+    background-color:var(--clr-bg);
+    margin-top:2.2em;
+    
+    
+}
+
+
+.footer-nav a{
+   
+    padding: 0.5em;
+    color:var(--clr-sec);
+    text-decoration: none;
+    display: inline-block;
+    
+
+
+    
+}
+.hide {
+    display:none;
+}
+
+
+
+.copyright {
+    display:none;
+}
+ 
