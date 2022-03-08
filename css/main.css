@@ -62,6 +62,7 @@ html{
 
 body{
     margin:0;
+    padding:0;
 }
 
 img{
@@ -83,6 +84,7 @@ p{
 
 
 
+
 h1,h2{
     font-family: var(--text-headings);
     line-height:0.8;
@@ -98,29 +100,116 @@ h2{
 /*Navigation*/
 
 
-nav ul{
-    display:flex;
-    list-style: none;
-    margin:0;
-    padding:0;
-    justify-content:space-around;
-    background-color:var(--clr-bg) ;
+/*Mobile nav*/
+
+
+
+.mobile-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color:var(--clr-bg);
+  color:var(--clr-sec);
+  
 }
 
-nav a{
-    display: inline-block;
-    padding: 0.5em;
-    color:var(--clr-sec);
+.nav-links{
+    width:100%;
+}
+
+.nav-links ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: center;
+    
+    
+
+}
+
+.nav-links li a{
     text-decoration: none;
+    display:block;
+    padding:1rem;
+    color:#FDE7C8;
     
 }
 
-nav a:hover,
-nav a:focus{
-    color: var(--clr-hover);
+.nav-links li:hover{
+    background-color: #8a682a;
 }
 
+.mobile-logo{
+  margin: 0.5rem;   
+}
+
+.mobile-logo img{
+    width:50px;
+    height:50px;
+}
+
+.toggle-button{
+    position:absolute;
+    top:1.5rem;
+    right:1rem;
+    display:flex;  /*make sure to hide it for destkop */
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar {
+   height:3px;
+   width:100%;
+   background-color:var(--clr-sec);
+   border-radius:10px;
+}
+
+.desktop-nav{
+    display:none;
+}
+
+.social {
+    display:flex;
+    width:100%;
+    padding-top:1rem;
+    
+
+}
+
+.social a{
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--clr-bg);
+    color:var(--clr-sec);
+    width:100%;
+    margin-bottom:1rem;
+    margin-left:4.5rem;
+    text-decoration: none;
+}
+
+.social a:hover{
+    color:var(--clr-hover);
+}
+
+
+
 /*Hompage styles */
+
+.header{
+    width:100%;
+}
+
 .link {
 
     padding:1em 1em;
@@ -265,4 +354,51 @@ nav a:focus{
 .copyright {
     display:none;
 }
- 
+
+
+
+
+.footer-social{
+    display:none;
+}
+
+
+@media (min-width:600px) {
+
+
+    .mobile-nav{
+        display:none;
+    }
+
+    nav ul{
+        display:flex;  /*display back to flex in desktop*/
+        list-style: none;
+        margin:0;
+        padding:0;
+        justify-content:space-around;
+        background-color:var(--clr-bg) ;
+    }
+    
+    nav a{
+        display: inline-block;
+        padding: 0.5em;
+        color:var(--clr-sec);
+        text-decoration: none;
+        
+    }
+    
+    nav a:hover,
+    nav a:focus{
+        color: var(--clr-hover);
+    }
+    
+    .logo{
+        width:32px;
+        height:28px;
+    }
+    
+    .desktop-nav{
+        display: flex;
+    }
+    
+}
