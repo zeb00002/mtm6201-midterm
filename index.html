@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="js/myscript.js" defer ></script>
     <title>Document</title>
 </head>
 <body>
     <a name="top"></a>
     <header class="header">
 
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
         <nav class="mobile-nav">
+            
             <div class="mobile-logo"><a href="index.html" ><img src="images/Logo.png"></a></div>
 
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
+            
             <div class="nav-links">
+                
                 <ul>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Cart</a></li>
@@ -30,16 +35,19 @@
                     <li><a href="#">Search</a></li>
                 </ul>
 
+                <div class="social">
+                    <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    </ul>
+                </div>
+
 
 
             </div>
 
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-               
-              </div>
+            
         </nav>
         <nav class="desktop-nav">
           
@@ -52,12 +60,12 @@
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Cart</a></li>
                     <li><a href="#">Icon</a></li>
-                    <li><a href="#">Icon 2</a></li>
+                    
                     
                 
             </ul>
         </nav>
-        <picture>
+        <picture class="tcakes">
             
             
                 <source srcset="images/3-cakes_1600.jpg,
@@ -91,15 +99,18 @@
     </header>
     <main>
         <p class="link"> Try our new <a href="#">Premium Cupcakest</a></p>
-        <section class="mission">
-            <img src="images/Bulb.jpg" alt="Picture of Bulb" >
+        <div class="mission">
+            <div class="mission-pic">
+            <img src="images/Bulb.jpg" alt="Picture of Bulb" ></div>
+
+            <div class="mission-para">
             <h1>Mission</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan, risus sed imperdiet tempor, nisl mauris sodales diam, id ultrices ex urna sed felis. Suspendisse non arcu hendrerit, consectetur lectus et, suscipit ante. Nunc id commodo risus. Maecenas eget bibendum ipsum. Morbi in euismod nibh. Maecenas in ullamcorper est. In vehicula mi iaculis est scelerisque suscipit vel mollis risus. Morbi ac neque dictum, finibus ligula nec, ultrices magna. Integer eget aliquam erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            
-        </section>
+            <p>Lorem ipsum dolor rt. In vehicula mi iaculis est scelerisque suscipit vel mollis risus. Morbi ac neque dictum, finibus ligula nec, ultrices magna. Integer eget aliquam erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+        </div>
         
         
-        <section class="menu-links">
+        
         <div class="container">
 
             <div class="shop">
@@ -118,7 +129,7 @@
 
         </div>
 
-        </section>
+        
     </main>
     <footer>
         <div class="footer">
