@@ -565,6 +565,7 @@ nav a:focus{
 
       .top-to{
           display: block;
+          
       }
       
       .top-to button{
@@ -576,14 +577,18 @@ nav a:focus{
           border-radius: 0px;
           margin-top:1em;
           margin-right:1em;
+          
           display: flex;
           padding-left:0.7rem;
+          padding-top: 0;
+          
           
           
       }
       
       .top-to a{
           color:var(--clr-sec);
+          
           
       }
       .top-to a:hover{
@@ -635,3 +640,122 @@ nav a:focus{
       }
       
  }
+
+
+ /*Contact Page */
+ @font-face {
+    font-family: "Edwardian Script ITC";
+    src: url(http://www.microsoft.com/typography/fonts/font.aspx?FMID=990);
+}
+ h1,h2{
+     color:var(--clr-headings);
+     font-family: "Edwardian Script ITC";
+     font-size: 3rem;
+     text-align: center;
+     margin-top: 1.5rem;
+     margin-bottom: 3rem;
+ }
+
+ form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: rgb(240, 238, 236);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+
+    /* Uniform text field size */
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  #text {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 15em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+     /* same size as the label elements */
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  button{
+    background-color: var(--clr-bg);
+    color: var(--clr-sec);
+    padding: 0.5rem;
+  }
+ 
+h2{
+    text-align: left;
+    padding: 1em;
+    margin-bottom:1rem;
+}
+.maps{
+   display: flex;
+   justify-content: center;
+}
+
+::placeholder{
+    font-size:0.8rem;
+    padding-left: 0.5em;
+}
+
+
+
+@media only screen and (max-width: 600px){
+      
+  input,
+  textarea {
+
+    
+    width: 200px;
+    
+   
+  }
+  form {
+    
+    
+    width: 350px;
+   
+
+}
+  
+}
