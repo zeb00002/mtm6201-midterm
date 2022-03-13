@@ -759,3 +759,45 @@ h2{
 }
   
 }
+
+/*FAQS Page */
+
+.card {
+    background-color:#E6E6E6;
+    border: 1px solid rgb(51, 47, 47);
+    color: rgb(48, 44, 44);
+    padding: 1rem;
+    height: auto;
+    margin: 1rem;
+  }
+  
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .cards { 
+      grid-template-columns: repeat(2, 1fr); 
+    } /*2 columns for screen sizes above 600px*/
+
+    h3{
+        color: var(--clr-headings);
+        font-weight: bold;
+    }
+  
+  /* Screen smalller than 600px? 1 column */
+  @media only screen and (max-width: 600px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+  }
+
+  .linktoo{
+      margin-left: 1rem;
+  }
+  
+  
+ 
+    
+  
