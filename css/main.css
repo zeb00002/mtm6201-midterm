@@ -43,6 +43,8 @@ table {
 	border-spacing: 0;
 }
 
+/*Variables declared to be used */
+
 :root{
     --clr-text:#1D1A0C;
     --clr-headings:#D8A941;
@@ -101,7 +103,7 @@ h2{
 
 
 /*Navigation*/
-
+/*Doinf desktop first, hence the mobile nav is hidden*/
 
 .mobile-nav{
     display:none;
@@ -134,8 +136,13 @@ nav a:focus{
 }
 
 .logo{
-    width:32px;
-    height:28px;
+    display: block;
+    margin: auto;
+    
+}
+
+.desktop-nav li{
+    padding-top: 1rem;
 }
 
 .desktop-nav{
@@ -375,12 +382,12 @@ nav a:focus{
         margin: 0.5rem;
         width:100%;   
       }
-      
-      .mobile-logo img{
-          width:50px;
-          height:50px;
+
+      .color a {
+          background-color:#999;
       }
       
+    
       .toggle-button{
           position:absolute;
           top:1.5rem;
@@ -566,6 +573,7 @@ nav a:focus{
       .top-to{
           display: block;
           
+          
       }
       
       .top-to button{
@@ -588,12 +596,21 @@ nav a:focus{
       
       .top-to a{
           color:var(--clr-sec);
+          transition: 0.8s;
           
+        
           
       }
-      .top-to a:hover{
-          color:var(--clr-hover);
+      .top-to button a:hover{
+          color:var(--clr-text);
+         
+
           
+      }
+      .top-to button:hover{
+        transition: 0.8s;
+        background-color:var(--clr-sec);
+        transform:scale(0.8);
       }
       
       
@@ -738,6 +755,11 @@ h2{
     padding-left: 0.5em;
 }
 
+.maps {
+    margin-right:2rem;
+    margin-left: 2rem;
+}
+
 
 
 @media only screen and (max-width: 600px){
@@ -787,6 +809,10 @@ h2{
         color: var(--clr-headings);
         font-weight: bold;
     }
+
+    .color a{
+        color: #FFFFFF;  /*Changes color of faq anchor to show which page are you in */
+    }
   
   /* Screen smalller than 600px? 1 column */
   @media only screen and (max-width: 600px) {
@@ -798,6 +824,38 @@ h2{
   }
   
   
- 
+ /* CSS Animation */
+.desktop-nav a:active{ 
+    animation:shah 0.2s infinite alternate;
+
+}
+
+@keyframes shah {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-5px);
+        color: #654813;
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+ .desktop-nav ul a:hover{
+     transform:scale(0.9);
+     color:var(--clr-headings);
+     transition:0.8s;
+    
+     border: solid 0.5px var(--clr-sec);
+
+
+ }
+
+ .desktop-nav ul a:active{
+
+ }
     
   
