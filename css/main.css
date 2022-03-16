@@ -186,6 +186,17 @@ nav a:focus{
     flex-direction: row;
     border-top: 1px solid black;
     
+    
+}
+
+
+.mission-pic{
+    flex-basis: 50%;
+}
+
+
+.mission-para{
+    flex-basis: 50%;
 }
 
 .mission >div {
@@ -196,13 +207,19 @@ nav a:focus{
     color:#D8A941;
     font-size: 30px;
     font-family: var(--text-headings);
-    padding-left:1.25em;
+    
 }
 
 .mission p{
     font-family: var(--text-font);
     font-size: 16px;
     padding:1em 2.5em;
+}
+
+@media only screen and (max-width: 740px){
+    .mission-para span{
+        display: none;
+    }
 }
 
 .container{
@@ -462,7 +479,8 @@ nav a:focus{
       .link a{
           color:var(--clr-headings);
           font-size: var(--text-headings);
-          font-family:var(--text-headings)
+          font-family:var(--text-headings);
+          
           
       }
 
@@ -470,14 +488,10 @@ nav a:focus{
           display: block;
       }
       
-      .mission img {
-          /*width: 280px;
-          height:230px;
-          padding:1em 2.5em; */
-      }
+    
       
       
-      .mission h1{
+      .mission-para h1{
           color:#D8A941;
           font-size: 30px;
           font-family: var(--text-headings);
@@ -489,6 +503,7 @@ nav a:focus{
           font-size: 16px;
           padding:1em 2.5em;
       }
+      
       
       .container{
           display:flex;
