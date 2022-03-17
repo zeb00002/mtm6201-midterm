@@ -159,17 +159,9 @@ nav a:focus{
     
 }
 .toggle-button{
-    display:none;
+    display:none;  /*Hiding the hamburger icon*/
 }
 
-.desktop-nav img{
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    padding-top: 0;
-    width:100%;
-    
-}
 
 .link {
     font-size: 25px;
@@ -191,7 +183,7 @@ nav a:focus{
 
 
 .mission-pic{
-    flex-basis: 50%;
+    flex-basis: 50%; /*two containers taking 50% of the available space within the parent container*/
 }
 
 
@@ -206,7 +198,7 @@ nav a:focus{
 .mission h1{
     color:#D8A941;
     font-size: 30px;
-    font-family: var(--text-headings);
+    font-family: var(--text-headings); /*variable used*/
     
 }
 
@@ -216,8 +208,11 @@ nav a:focus{
     padding:1em 2.5em;
 }
 
+
+
+
 @media only screen and (max-width: 740px){
-    .mission-para span{
+    .mission-para span{   /*Hiding some extra lorem ipsum below 740px*/
         display: none;
     }
 }
@@ -333,7 +328,7 @@ nav a:focus{
  }
 
  .footer a{
-     text-decoration: none;
+     text-decoration: none; /*removes underline form anchor tags*/
  }
 
  .footer-nav li{
@@ -344,11 +339,11 @@ nav a:focus{
      padding-top:1rem;
  }
 
-
+/*media query for screen sizes below 600px*/
  @media only screen and (max-width: 600px) {
     .mobile-nav{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /*making nav bar for mobile vertical*/
         justify-content: space-between;
         align-items: flex-start;
         background-color:var(--clr-bg);
@@ -358,7 +353,7 @@ nav a:focus{
       }
       
       .nav-links{
-          width:100%;
+          width:100%;/*making the li within bleed throughout */
           
       }
       
@@ -389,19 +384,22 @@ nav a:focus{
       
       .nav-links li:hover{
           background-color: #8a682a;
+          
       }
       
       .nav-links a:active{
-          display:flex;
+          display:flex; 
+          
       }
       
-      .mobile-logo{
+      .mobile-logo{ /*Svg */
         margin: 0.5rem;
         width:100%;   
       }
 
       .color a {
           background-color:#999;
+
       }
       
     
@@ -409,8 +407,8 @@ nav a:focus{
           position:absolute;
           top:1.5rem;
           right:1rem;
-          display:flex;  /*make sure to hide it for destkop */
-          flex-direction: column;
+          display:flex; 
+          flex-direction: column;/*stacking spans on top of each other*/
           justify-content: space-between;
           width:30px;
           height:21px;
@@ -428,7 +426,7 @@ nav a:focus{
       }
       
       .desktop-nav{
-          display:none;
+          display:none; /*hides destkop nav*/
       }
       
       .social {
@@ -513,7 +511,7 @@ nav a:focus{
       .container{
         display:flex;
         
-        box-sizing: none;
+        
        
         flex-direction: column;
         padding:1rem;
@@ -557,7 +555,7 @@ nav a:focus{
           width:150px;
           height: 45px;
           font-size:25px;
-          margin:none;
+          margin:0;
           margin-bottom: 1rem;
           
       
@@ -586,16 +584,16 @@ nav a:focus{
       }
 
       .top-to{
-          display: block;
+          display: block; /*top to button*/
           
           
       }
       
-      .top-to button{
-          border-color:1px solid var(--clr-sec);
+      .topbutton{
+          border:1px solid var(--clr-sec);
           background-color:var(--clr-bg);
           height: 40px;
-          width: 40px;
+          width: 25px;
           font-size: 30px;
           border-radius: 0px;
           margin-top:1em;
@@ -604,6 +602,7 @@ nav a:focus{
           display: flex;
           padding-left:0.7rem;
           padding-top: 0;
+          
           
           
           
@@ -616,7 +615,7 @@ nav a:focus{
         
           
       }
-      .top-to button a:hover{
+      .top-to  a:hover{
           color:var(--clr-text);
          
 
@@ -625,7 +624,7 @@ nav a:focus{
       .top-to button:hover{
         transition: 0.8s;
         background-color:var(--clr-sec);
-        transform:scale(0.8);
+        transform:scale(0.8);/*button size reduces to 0.8 when hovered*/
       }
       
       
@@ -661,7 +660,7 @@ nav a:focus{
       
       
       .copyright {
-          display:none;
+          display:none; 
       }
       
       
@@ -676,7 +675,7 @@ nav a:focus{
 
  /*Contact Page */
  @font-face {
-    font-family: "Edwardian Script ITC";
+    font-family: "Edwardian Script ITC"; /*edwardian font linked here*/
     src: url(http://www.microsoft.com/typography/fonts/font.aspx?FMID=990);
 }
  h1,h2{
@@ -783,7 +782,7 @@ h2{
   textarea {
 
     
-    width: 200px;
+    width: 200px; /*text are width changes as screen size reduces*/
     
    
   }
@@ -798,6 +797,20 @@ h2{
 }
 
 /*FAQS Page */
+
+
+.bg {  /*BG image used*/
+    background: center/cover url("/images/faq-3200.jpg") no-repeat;
+  
+    
+}
+
+
+.bg h1{
+    margin:0;
+    padding:15rem 0 15rem 0;
+    font-size: 70px;
+}
 
 .card {
     background-color:#E6E6E6;
@@ -831,7 +844,26 @@ h2{
   
   /* Screen smalller than 600px? 1 column */
   @media only screen and (max-width: 600px) {
-    .cards { grid-template-columns: repeat(1, 1fr); }
+    .cards { grid-template-columns: repeat(1, 1fr);
+     }
+
+     .bg {
+        background-image: url("/images/faq-320.jpg");
+        width:100%;
+        margin: 0;
+        padding: 0;
+        
+        background-repeat: no-repeat;
+      
+        
+    }
+    
+    
+    .bg h1{
+        margin:0;
+        padding:10rem 0 10rem 0;
+        font-size: 40px;
+    }
   }
 
   .linktoo{
@@ -869,8 +901,5 @@ h2{
 
  }
 
- .desktop-nav ul a:active{
 
- }
-    
   

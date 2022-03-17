@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="js/myscript.js" defer ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Link for all the icons-->
+    
     <title>Home</title>
 </head>
 <body>
     <a name="top"></a>
     <header class="header">
 
-        <a href="#" class="toggle-button">
+        <a href="#" class="toggle-button">  <!-- instead of icon here Im using three span classes to make a hamburger icon-->
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
 
-        <nav class="mobile-nav">
+        <nav class="mobile-nav"> <!--Nav for mobile which is a bit different hence will be hiding it for destkop-->
             
-            <div class="mobile-logo"><a href="index.html" ><object class="logo" data="images/Group 52.svg" width="35" height="35"> </object></a></div>
+            <div class="mobile-logo"><a href="index.html" ><object class="logo" data="images/logo_cake.svg" width="35" height="35"> </object></a></div> <!---SVG logo is linked here-->
 
             
             <div class="nav-links">
@@ -35,7 +35,7 @@
                     <li><a href="#"><i class="fa fa-search"></i></a></li>
                 </ul>
 
-                <div class="social">
+                <div class="social"><!--Social media icons for nav bar mobile-->
                     <ul>
                     <li><a href="#" class="fa fa-facebook"></a></li>
                     <li><a href="#" class="fa fa-instagram"></a></li>
@@ -49,14 +49,14 @@
 
             
         </nav>
-        <nav class="desktop-nav">
+        <nav class="desktop-nav"> <!--Destkop nav here without hamburger and social icon-->
           
             <ul>
                 
                     <li><a href="#">Event</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="faqs.html">FAQs</a></li>
-                    <a href="index.html"><object class="logo" data="images/Group 52.svg" width="50" height="50"> </object></a>
+                    <li><a href="index.html"><object class="logo" data="images/logo_cake.svg" width="50" height="50"> </object></a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Cart</a></li>
                     <li><a href="#"><i class="fa fa-search"></i></a></li>
@@ -65,7 +65,7 @@
                 
             </ul>
         </nav>
-        <picture class="tcakes">
+        <picture class="tcakes"> <!--Responsive image for different sscreen sizes with source set-->
             
             
                 <source srcset="images/3-cakes_1600.jpg,
@@ -179,7 +179,7 @@
                     <img src="images/cakes.jpg" alt="cakes">
                 </picture>
                 
-                <button><a href="#"></a>Shop</a></button>
+                <button>Shop</button>
             </div>
             <div class="events">
                 <picture>
@@ -214,7 +214,7 @@
                 </picture>
                
 
-                <button><a href="#"></a>Events</a></button>
+                <button>Events</button>
             </div>
             <div class="faqs">
                 
@@ -251,7 +251,7 @@
                 </picture>
                 
                
-                <button><a href="#"></a>FAQs</a></button>
+                <button>FAQs</button>
             </div>
 
         </div>
@@ -273,9 +273,9 @@
             </div>  
            
 
-        <div class="top-to">
+        <div class="top-to"> <!--A quick back to top link for mobile -->
             
-                <button><a href="#top">↑</a></button>
+             <div class="topbutton"><a  href="#top">↑</a></div>
             
         </div>
 
